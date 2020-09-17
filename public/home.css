@@ -1,0 +1,49 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 20px;
+    /* background-color: #24252A; */
+
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    list-style: none;
+}
+.header  {
+    /* list-style: none; */
+    margin-left: 5%;
+}
+
+.header li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.header li a {
+    transition: all 0.3s ease 0s;
+}
+
+.header li a:hover {
+    color: gray;
+}
+ li, a, button {
+    font-family: 'Open Sans';
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 49px;
+    letter-spacing: 0.01em;
+    color: #000000;
+}
+
+
