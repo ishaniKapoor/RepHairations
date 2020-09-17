@@ -32,7 +32,8 @@
 .header li a:hover {
     color: gray;
 }
- li, a, button {
+
+li, a, button {
     font-family: 'Open Sans';
     font-weight: 500;
     font-size: 16px;
