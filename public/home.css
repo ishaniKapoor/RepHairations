@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-.image-container{
-    width: 90%;
-    margin: auto;
-    border: 2px solid black;
-}
 
 .image-slider{
     display:flex;
@@ -90,7 +85,7 @@ p {
 .image-container {
     width: 90%;
     margin: auto;
-    border: 2px solid black;
+    
 }
 
 .image-slider {

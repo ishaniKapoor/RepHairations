@@ -19,7 +19,7 @@
     </ul>
     </div>
 
-        <!-- <div class="image-container">
+    <div class="image-container">
             <div class="image-slider">
                 <img src="./img/image4.jpg" id="lastClone" alt="">
                 <img src="./img/image1.jpg" alt="">
@@ -30,13 +30,8 @@
             </div>
         </div>
             <button id="prevBtn">Prev</button>
-            <button id="nextBtn">Next</button> -->
-    <div class="products">
-        <img src="./photos/product1.jpeg" alt="D'smooth loc butter">
-        <img src="./photos/product2.jpeg" alt="Caribean coconut">
-        <img src="./photos/product3.jpeg" alt="Black joy mask">
-    </div>
-
+            <button id="nextBtn">Next</button> 
+    
     <div class="location">
             <h3>Location & hours</h3>
             <div class="wrapper">
@@ -64,13 +59,36 @@
 
     <script>
     const imageSlider = document.querySelector('.image-slider');
-    const images = document.querySelectorAll('.image-slider img');
+    const images = document.querySelectorAll('.image-slider');
     const prevBtn = document.querySelector('#prevBtn');
     const nextBtn = document.querySelector('#nextBtn');
     let counter = 1;
     const size = images[0].clientWidth;
 
-      imageSlider.style.transform = 'translate(' + (-size * counter) + 'px)';
+      imageSlider.style.transform = 'translateX(' + (-size * counter) + 'px)';
+
+      //button listener
+
+      nextBtn.addEventListener('click', ()=> {
+         imageSlider.style.transition = "transform 0.4s ease-in-out";
+         counter++;
+         imageSlider.style.transform = 'translateX(' + (-size * counter) + 'px)';
+      });
+
+      prevBtn.addEventListener('click', ()=> {
+         imageSlider.style.transition = "transform 0.4s ease-in-out";
+         counter--;
+         imageSlider.style.transform = 'translateX(' + (-size * counter) + 'px)';
+      });
+
+      imageSlider.addEventListener('transitionend', ()=>{
+          if (images[counter].id === 'lastClone') {
+            imageSlider.style.transition = "none";
+            counter = image.length - 2;
+            imageSlider.style.transform = 'translateX(' + (-size * counter) + 'px)';
+          }
+      });
+
     </script>
 </body>
 </html>
