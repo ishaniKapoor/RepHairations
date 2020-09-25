@@ -18,9 +18,20 @@
         <li ><a href="./Mission.html"> Mission </a></li>
     </ul>
     </div>
-    <div class="slideshow">
-        <h1>slide show</h1>
-    </div>
+
+        <div class="image-container">
+            <div class="image-slider">
+                <img src="./img/image4.jpg" id="lastClone" alt="">;
+                <img src="./img/image1.jpg" alt="">;
+                <img src="./img/image2.jpg" alt="">;
+                <img src="./img/image3.jpg" alt="">;
+                <img src="./img/image4.jpg" alt="">;
+                <img src="./img/image1.jpg" id="firstClone" alt="">;
+            </div>
+        </div>
+
+        <button id="prevBtn">Prev</button>
+        <button id="nextBtn">Next</button>
     <div class="products">
         <img src="./photos/product1.jpeg" alt="D'smooth loc butter">
         <img src="./photos/product2.jpeg" alt="Caribean coconut">
@@ -51,5 +62,33 @@
         <p><a href="#"> instagram </a></p>
         </section>
     </footer>
+
+
+    <!-- <div class="image-container">
+      <div class="image-slider">
+        <img src="./img/image4.jpg" id = "lastClone"alt="">;
+          <img src="./img/image1.jpg" alt="">;
+          <img src="./img/image2.jpg" alt="">;
+          <img src="./img/image3.jpg" alt="">;
+          <img src="./img/image4.jpg" alt="">;
+          <img src="./img/image1.jpg" id = "firstClone"alt="">;
+      </div>
+    </div>
+
+    <button id="prevBtn">Prev</button>
+    <button id="nextBtn">Next</button> -->
+    <script>
+      const imageSlider = document.querySelector('.image-slider');
+      const images = document.querySelectorAll('.image-slider img');
+    
+      const prevBtn = document.querySelector('#prevBtn');
+      const nextBtn = document.querySelector('#nextBtn');
+
+      //counter
+      let counter = 1;
+      const size = images[0].clientWidth;
+
+      imageSlider.style.transform = 'translate(' + (-size * counter) + 'px)';
+    </script>
 </body>
 </html>
