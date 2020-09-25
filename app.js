@@ -4,10 +4,20 @@ const PORT = process.env.PORT || 3000;
 app.use(express.static('public'));
 
 app.get("/", function (req, res) {
-    console.log("here");
-    res.sendFile("/public/Home.html", {
-        root: __dirname
-    });
+    res.sendFile("/public/Home.html")
+})
+
+app.get("/home", function (req, res) {
+    res.sendFile("/public/Home.html")
+})
+
+app.get("/Mission", function (req, res) {
+    res.sendFile("/public/Mission.html")
+})
+
+app.get("/Shop", function (req, res) {
+    res.sendFile("/public/Shop.html")
+    
 })
 
 

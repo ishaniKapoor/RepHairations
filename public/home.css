@@ -5,7 +5,8 @@
 }
 
 .header {
-    padding: 20px;
+    padding: 0px;
+    margin-left: 5%;
     /* background-color: #24252A; */
 
 }
@@ -16,10 +17,10 @@
     padding: 30px 10%;
     list-style: none;
 }
-.header  {
+/* .header  {
     /* list-style: none; */
-    margin-left: 5%;
-}
+    /* margin-left: 5%; */
+/* }  */
 
 .header li {
     display: inline-block;
@@ -33,7 +34,7 @@
     color: gray;
 }
 
-li, a, button {
+li, a, button,h3 {
     font-family: 'Open Sans';
     font-weight: 500;
     font-size: 16px;
@@ -46,5 +47,67 @@ li, a, button {
     letter-spacing: 0.01em;
     color: #000000;
 }
+.slideshow {
+    background-color: gray;
+    padding: 9%;
+    /* margin-left: 10%; */
+}
+.products {
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.products img {
+    width: 200px;
+    height: 200px;
+    margin-right: 12%;
+    border-radius: 20%;
+    box-shadow: black 0  0 10px;
+}
+
+.location {
+    margin-top: 2%;
+    margin-left: 10%;
+}
+p { 
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.wrapper {
+    margin-left: 0%;
+    display: flex;
+    align-items: center;
+}
+.wrapper section {
+    display: inline-block;
+    padding: 0px 3px;
+    margin-right: 5%;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    margin-top: 3%;
+    padding: 5%;
+    justify-content: space-between;
+
+}
+.social p  {
+    display: inline-block;
+}
+footer a {
+    font-size: 14px;
+    color: white;
+}
+
+.social p a:hover {
+    color: gray;
+}
+
+
+
 
 
