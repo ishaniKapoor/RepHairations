@@ -10,12 +10,36 @@
     /* background-color: #24252A; */
 
 }
+.container {
+    position: relative;
+}
+
+
+
+
+.text{
+position: absolute;
+width: 570.97px;
+height: 247.5px;
+left: 150px;
+top: 100px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 78px;
+line-height: 60px;
+background-color: white;
+color: black;
+
+}
+
 
 .bgimage {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+        width: 100%;
   }
 
 .nav {
