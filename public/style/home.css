@@ -24,11 +24,6 @@
     padding: 30px 10%;
     list-style: none;
 }
-/* .header  {
-    /* list-style: none; */
-    /* margin-left: 5%; */
-/* }  */
-
 .header li {
     display: inline-block;
     padding: 0px 20px;
@@ -66,9 +61,9 @@ li, a, button,h3 {
 .products img {
     width: 200px;
     height: 200px;
-    margin-right: 12%;
-    border-radius: 20%;
-    box-shadow: black 0  0 10px;
+    margin-right: 13%;
+    /* sborder-radius: 10%; */
+    /* box-shadow: black 0  0 10px; */
 }
 
 .location {
