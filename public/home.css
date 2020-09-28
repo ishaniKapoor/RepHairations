@@ -17,7 +17,7 @@
 
 
 
-.Missiontext{
+.text{
 position: absolute;
 width: 570.97px;
 height: 247.5px;
@@ -33,25 +33,6 @@ background-color: white;
 color: black;
 
 }
-
-.Storytext {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    width: 589px;
-    height: 266px;
-    left: 835px;
-    top: 530px;
-
-    font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 70px;
-line-height: 60px;
-background-color: white;
-color: black;
-}
-
 
 
 .bgimage {
@@ -157,8 +138,4 @@ footer a {
 
 .social p a:hover {
     color: gray;
-}
-
-#more {
-    display:none;
 }

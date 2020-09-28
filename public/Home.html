@@ -21,12 +21,12 @@
 
     <div class="image-container">
             <div class="image-slider">
-                <img src="./img/image4.jpg" id="lastClone" alt="">
+                <img src="./img/image4.jpg" id="lastclone" alt="">
                 <img src="./img/image1.jpg" alt="">
                 <img src="./img/image2.jpg" alt="">
                 <img src="./img/image3.jpg" alt="">
                 <img src="./img/image4.jpg" alt="">
-                <img src="./img/image1.jpg" id="firstClone" alt="">
+                <img src="./img/image1.jpg" id="firstclone" alt="">
             </div>
         </div>
             <button id="prevBtn">Prev</button>
@@ -82,9 +82,9 @@
       });
 
       imageSlider.addEventListener('transitionend', ()=>{
-          if (images[counter].id === 'lastClone') {
+          if (images[counter].id === 'lastclone') {
             imageSlider.style.transition = "none";
-            counter = image.length - 2;
+            counter = images.length - 3;
             imageSlider.style.transform = 'translateX(' + (-size * counter) + 'px)';
           }
       });

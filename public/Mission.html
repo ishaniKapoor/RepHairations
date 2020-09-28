@@ -21,7 +21,7 @@
     <div class = "container">
     <div class = "bgimage">
         <img src ="./img/imgbg3.jpg" width = "1590" height = "346" alt="">
-            <div class = "text">
+            <div class = "Missiontext">
                 <h4>Our Mission</h4>
                 <p>At RepHAIRations, it our mission to provide a 
                     welcoming environment in which anyone can shop, 
@@ -32,6 +32,30 @@
         </div>
     </div>
     </div>
+    <div class = "ourStory">
+        <img src = "./img/image1.jpg" alt="">
+        <div class = "Storytext">
+            <p> 
+                We are friends. We are moms. We are different races. We want a better world for our kids.
+ 
+                We met in 2016, while volunteering for a fundraiser at our children's school. We talked about 
+                the different paths that had led each of us to a mostly white school in a suburb of segregated 
+                Boston. We discussed where to get our hair done and complained about the everyday inconveniences 
+                of having no hair shops in our area. We fleshed out the endless ways that systemic racism and 
+                oppression affects every bit of our daily lives. Then, we had honest conversations about the 
+                roles we each play in upholding and dismantling that system - we covered it all! We debated 
+                about the best ways to make change. <span id = "dots">...</span>
+                <span id= "more">And, while it feels overwhelming to think about dismantling 
+                systemic oppression, it felt exciting to dream about filling a need by opening a hair shop where 
+                none exists. We talked and dreamed, and dreamed and talked… until a day in October 2019 when we 
+                decided to actually do it! Never mind that we knew nothing about opening a retail business of any 
+                kind. Never mind that we didn’t have a business plan or investors. We had a vision and a name and 
+                the conviction to make it happen. Welcome to RepHAIRations!</span>
+            </p>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+        </div>
+    </div>
+
     <div class="location">
         <h3>Location & hours</h3>
         <div class="wrapper">
@@ -56,5 +80,22 @@
     <p><a href="#"> instagram </a></p>
     </section>
 </footer>
+<script>
+    function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+        }
+    }
+</script>
 </body>
 </html>
