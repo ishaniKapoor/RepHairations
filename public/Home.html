@@ -84,7 +84,7 @@
       imageSlider.addEventListener('transitionend', ()=>{
           if (images[counter].id === 'lastclone') {
             imageSlider.style.transition = "none";
-            counter = images.length - 3;
+            counter = images.length - 2;
             imageSlider.style.transform = 'translateX(' + (-size * counter) + 'px)';
           }
       });
