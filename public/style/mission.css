@@ -1,23 +1,4 @@
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-
-.header {
-    padding: 0px;
-    margin-left: 5%;
-    /* background-color: #24252A; */
-
-}
-.container {
-    position: relative;
-}
-
-
-
-
-.text{
+.Missiontext{
 position: absolute;
 width: 570.97px;
 height: 247.5px;
@@ -34,14 +15,55 @@ color: black;
 
 }
 
+.Storytext {
+    padding-top: 10px;
+    padding-left: 200px;
+    margin: 0px;
+    box-sizing: border-box;
+    width: 700px;
 
-.bgimage {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-        width: 100%;
-  }
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 60px;
+    background-color: white;
+    color: black;
 
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.ourStory {
+    padding-top: 10px;
+    padding-left: 150px;
+    display: flex;
+    height: 200px;
+}
+
+#more {
+    display:none;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.image-slider{
+    display:flex;
+    width: 100%;
+    height: 500px;
+
+}
+.header {
+    padding: 0px;
+    margin-left: 5%;
+    /* background-color: #24252A; */
+
+}
 .nav {
     display: flex;
     justify-content: space-between;
@@ -49,11 +71,6 @@ color: black;
     padding: 30px 10%;
     list-style: none;
 }
-/* .header  {
-    /* list-style: none; */
-    /* margin-left: 5%; */
-/* }  */
-
 .header li {
     display: inline-block;
     padding: 0px 20px;
@@ -79,11 +96,6 @@ li, a, button,h3 {
     letter-spacing: 0.01em;
     color: #000000;
 }
-.slideshow {
-    background-color: gray;
-    padding: 9%;
-    /* margin-left: 10%; */
-}
 
 
 .location {
@@ -97,18 +109,7 @@ p {
     font-size: 20px;
     line-height: 30px;
 }
-.image-container {
-    width: 90%;
-    margin: auto;
-    border: 2px solid black;
-}
 
-.image-slider {
-    display: flex;
-    width: 100%;
-    height: 500px;
-
-}
 .wrapper {
     margin-left: 0%;
     display: flex;
