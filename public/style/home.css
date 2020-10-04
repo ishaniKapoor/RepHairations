@@ -36,7 +36,7 @@
     color: gray;
 }
 
-li, a, button,h3 {
+li, a,h3 {
     font-family: 'Open Sans';
     font-weight: 500;
     font-size: 16px;
@@ -67,20 +67,21 @@ li, a, button,h3 {
 }
 
 .location {
-    margin-top: 2%;
+    /* display: flex; */
+    margin-top: 5%;
     margin-left: 10%;
 }
+
+/* .location div{
+    display: inline-block;
+
+} */
 p { 
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
-}
-.image-container {
-    width: 90%;
-    margin: auto;
-    
 }
 
 .image-slider {
@@ -90,7 +91,8 @@ p {
 
 }
 .wrapper {
-    margin-left: 0%;
+    margin-top: 4%;
+    /* margin-left: 3%; */
     display: flex;
     align-items: center;
 }
@@ -119,5 +121,76 @@ footer a {
 .social p a:hover {
     color: gray;
 }
+h2 {
+    margin-top: 3%;
+    text-align: center;
+}
+
+.shop {
+    margin-left: 0%;
+    display: flex;
+    align-items: center;
+}
+
+.shop section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    padding: 0px 3px;
+    margin-right: 0%;
+    margin-top: 5%;
+    margin-left: 10%;
+    position: relative;
+}
+.mission {
+    margin-top: 5%;
+    background-color: #f6f7f9;
+    padding: 2%;
+    text-align:center;
+}
+
+section h4,
+.shop a {
+    text-align: center;
+}
+
+.shop a {
+    font-size: 25px;
+}
+
+.shop img {
+    border-radius: 2%;
+    transition: transform .2s;
+    width: 400px;
+    height: 400px;
+    vertical-align: top;
+}
+
+.shop img:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
 
 
+section button {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+button {
+    background : black;
+    width: 30%;
+    box-shadow: 5px 4px;
+
+}
+button p {
+    color: white;
+    
+}
+
+button p:hover {
+    color: gray;
+    cursor:pointer;
+
+}
