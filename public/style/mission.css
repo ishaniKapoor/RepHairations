@@ -17,10 +17,11 @@ color: black;
 
 .Storytext {
     padding-top: 10px;
-    padding-left: 200px;
+    padding-left: 100px;
     margin: 0px;
     box-sizing: border-box;
-    width: 700px;
+    width: 800px;
+    border: 3px solid black;
 
     font-family: Montserrat;
     font-style: normal;
