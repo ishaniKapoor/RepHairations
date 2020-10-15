@@ -1,7 +1,52 @@
 var express = require("express");
+const request = require('request');
+const bodyParser = require('body-parser');
+const path = require('path');
 var app = express();
 const PORT = process.env.PORT || 3000;
 app.use(express.static('public'));
+// Body parser Middle ware
+app.use(bodyParser.urlencoded({extended: true}));
+//Sign up route
+app.post('/signup', (req,res) => {
+    const {firstName, lastName, email} = req.body;
+    // construct request data 
+    const data = {
+        members: [
+            {
+                email_address: email, 
+                status:'subscribed',
+                merge_fields: {
+                    FNAME: firstName, 
+                    LNAME: lastName
+                }
+            }
+        ]
+    }
+    const postData = JSON.stringify(data); 
+    const options = {
+        url: 'https://us2.api.mailchimp.com/3.0/lists/9249a45cbe',
+        method: 'POST', 
+        headers: {
+            Authorization: 'auth 4ee80616fd4d1e5dab66716eddeb2ae2-us2'
+        },
+        body: postData
+    }
+    request(options, (err, response, body) => {
+        if(err) {
+            res.redirect('/fail.html');
+        } else {
+            if(response.statusCode === 200) {
+                res.redirect('/sucess.html');
+            } else {
+                res.redirect('/fail.html');
+            }
+        }
+    })
+
+})
+
+
 
 app.get("/", function (req, res) {
     res.sendFile("/public/Home.html", {
@@ -29,5 +74,5 @@ app.get("/Shop", function (req, res) {
 
 
 app.listen(PORT, process.env.IP, function () {
-    console.log("server is running");
+    console.log(`server is running on ${PORT}`);
 })

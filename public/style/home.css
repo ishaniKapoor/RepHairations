@@ -181,11 +181,6 @@ button p:hover {
     width: 100%;
     height: 400px;
 }
-/* .image-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-} */
 .left, .right {
     cursor: pointer;
     position: absolute;
