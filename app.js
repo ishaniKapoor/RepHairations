@@ -1,10 +1,16 @@
 var express = require("express");
 const request = require('request');
 const bodyParser = require('body-parser');
+const exphbs = require('express-handlebars');
+const nodemailer = require("nodemailer"); 
 const path = require('path');
 var app = express();
+
+app.engine('handlebars', exphbs());
+app.set('view engine', 'handlebars');
 const PORT = process.env.PORT || 3000;
 app.use(express.static('public'));
+app.use(express.json());
 // Body parser Middle ware
 app.use(bodyParser.urlencoded({extended: true}));
 //Sign up route
@@ -43,6 +49,9 @@ app.post('/signup', (req,res) => {
             }
         }
     })
+
+    // send email 
+    res.send("hello"); 
 
 })
 

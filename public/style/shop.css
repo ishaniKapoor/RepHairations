@@ -23,14 +23,13 @@ section h4,
 .shop a {
 
     text-align: center;
-       
 }
 
 .shop a {
     font-size: 25px;
 }
 
-img {
+.shop img {
     width: 200px;
     height: 200px;
     vertical-align: top;

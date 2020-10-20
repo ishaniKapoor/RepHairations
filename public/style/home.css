@@ -129,6 +129,13 @@ h2 {
     padding: 2%;
     text-align:center;
 }
+.mission p {
+    font-style: italic;
+}
+.mission h2 {
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
 
 section h4,
 .shop a {
