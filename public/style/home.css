@@ -12,6 +12,7 @@
     /* background-color: #24252A; */
 
 }
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -26,9 +27,8 @@
 .header li a {
     transition: all 0.3s ease 0s;
 }
-
-.header li a:hover {
-    color: gray;
+.link:hover {
+    color: #de9a52;
 }
 
 li, a,h3 {
@@ -99,7 +99,7 @@ footer a {
 }
 
 .social p a:hover {
-    color: gray;
+    color: #de9a52;
 }
 h2 {
     margin-top: 3%;
@@ -176,7 +176,7 @@ button p {
 }
 
 button p:hover {
-    color: gray;
+    color: #de9a52;
     cursor:pointer;
 
 }

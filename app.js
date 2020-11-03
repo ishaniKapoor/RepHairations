@@ -1,22 +1,30 @@
+const log = console.log; 
 var express = require("express");
 const request = require('request');
+const sendMail = require('./mail');
 const bodyParser = require('body-parser');
-const exphbs = require('express-handlebars');
-const nodemailer = require("nodemailer"); 
+// const exphbs = require('express-handlebars');
+// const nodemailer = require("nodemailer"); 
 const path = require('path');
 var app = express();
 
-app.engine('handlebars', exphbs());
+// app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 const PORT = process.env.PORT || 3000;
 app.use(express.static('public'));
 app.use(express.json());
 // Body parser Middle ware
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({extended: false}));
 //Sign up route
 app.post('/signup', (req,res) => {
-    const {firstName, lastName, email} = req.body;
+    const {firstName, lastName, email, textarea} = req.body;
     // construct request data 
+
+    // const data1 = {
+    //     email,
+    //     name,
+    //     textarea
+    // }
     const data = {
         members: [
             {
@@ -49,10 +57,9 @@ app.post('/signup', (req,res) => {
             }
         }
     })
-
-    // send email 
-    res.send("hello"); 
-
+    // // send email 
+    console.log("data: ", req.body);
+    sendMail(email, lastName, textarea);
 })
 
 
