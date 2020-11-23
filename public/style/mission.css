@@ -2,8 +2,10 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-}
 
+        /* background-color: #EAE7DC; */
+
+}
 
 .Missiontext{
 position: absolute;
@@ -117,7 +119,8 @@ a img {
 }
 
 .header li a:hover {
-    color: gray;
+        color: #de9a52;
+    
 }
 
 li, a, button,h3 {
