@@ -79,7 +79,10 @@
     <div class="location">
             <h3>Location & hours</h3>
             <div class="wrapper">
-            <section id="googleMap" style="width:508px;height:355px;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5890.369250243191!2d-71.18702794436545!3d42.42380489414744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3779b4298e159%3A0xd973671c57fa38fc!2sRepHAIRations!5e0!3m2!1sen!2sus!4v1606103076436!5m2!1sen!2sus"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
             </section>
             <section>
                 <p style="font-style: italic;">RepHAIRations</p>
@@ -104,40 +107,6 @@
         </section>
     </footer>
 
-    <script>
 
-    function myMap() {
-    var mapProp= {
-    center:new google.maps.LatLng(51.508742,-0.120850),
-    zoom:5,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-    }
-
-    var slide_index = 1;
-    displaySlides(slide_index);
-    function nextSlide(n) {
-        displaySlides(slide_index += n);
-    }
-    function currentSlide(n) {
-        displaySlides(slide_index = n);
-    }
-    function displaySlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("showSlide");
-        if (n > slides.length) {
-            slide_index =1;
-        }
-        if (n < 1) {
-            slide_index = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slides[slide_index -1].style.display = "block";
-    }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcQso_7TJcr7-ywUly0kVG6zA8QnY66ik&callback=myMap">
-    </script>
 </body>
 </html>

@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 // const nodemailer = require("nodemailer"); 
 const path = require('path');
 var app = express();
+require('dotenv').config();
 
 // app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
@@ -19,12 +20,6 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.post('/signup', (req,res) => {
     const {firstName, lastName, email, textarea} = req.body;
     // construct request data 
-
-    // const data1 = {
-    //     email,
-    //     name,
-    //     textarea
-    // }
     const data = {
         members: [
             {
