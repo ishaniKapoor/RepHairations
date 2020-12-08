@@ -8,19 +8,24 @@
     <title>Shop</title>
 </head>
 <body>
-    <div class=nav>
-        <li class='logo'><a href="./Home.html"> 
-        <img style="width: 300px; position: absolute;top: 32px;" src=" ./img/logo.svg" width="500" alt=""> </a></li>
+    <nav class=nav>
+        <li class='logo'>
+            <img class='logo' src=" ./img/logo.svg" width="500" alt=""> </li>
         <ul class="header">
-        <li ><a class="link" href="./Home.html"> Home </a></li>
-        <li><a class="link" href="./Comunity.html"> Community </a></li>
-        <li><a class="link" href="./Shop.html"> Shop </a></li>
-        <li><a class="link" href="./Mission.html"> About Us </a></li>
+            <li ><a class="link" href="./Home.html"> Home </a></li>
+            <li><a class="link" href="./Comunity.html"> Community </a></li>
+            <li><a class="link" href="./Shop.html"> Shop </a></li>
+            <li><a class="link" href="./Mission.html"> About Us </a></li>
     </ul>
+    <div class='burger'>
+        <div class='line1'></div>
+        <div class='line2'></div>
+        <div class='line3'></div>
     </div>
+    </nav>
 
     <h2>PRODUCTS</h2>
-    <div class="shop">
+    <div class="shops">
         <section >
             <img src="./photos/product1.jpeg" alt="D'smooth loc butter">
             <h4><a target="_blank" rel="noopener noreferrer"
@@ -31,7 +36,8 @@
         </section>
         <section class="care">
             <img src="./photos/product2.jpeg" alt="D'smooth loc butter">
-            <h4><a target="_blank" rel="noopener noreferrer"
+
+            <h4><br> <a target="_blank" rel="noopener noreferrer"
                     href="https://rephairations.square.site/shop/hair-scalp-care/3">CARE </a></h4>
             <p> 
                 We stock quality products from Black- and
@@ -80,6 +86,22 @@
             <p><a href="#"> instagram </a></p>
         </section>
     </footer>
-     
+    <script>
+        const navSlide = () => {
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.header');
+        const links = document.querySelectorAll('.header li');
+        // toggle now
+        burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+        })
+
+        // anime link
+        links.forEach((link, index) => {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7}s$`;
+        })
+        }
+        navSlide();
+    </script>
 </body>
 </html>

@@ -2,14 +2,21 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    /* background-color: #EAE7DC; */
 }
-
+.logo {
+    width: 300px;
+    margin-top: 2.5%;
+    /* width: 50%; */
+    /* position: absolute; */
+    /* top: 32px; */
+}
 
 
 .header {
     padding: 0px;
-    margin-left: 5%;
+    width: 60%;
+    /* width: 55%; */
+    margin-left: 2%;
     /* background-color: #24252A; */
 
 }
@@ -18,12 +25,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 2% 10%;
     list-style: none;
+    min-height: 8vh;
+    background-color: #24252A;
+    width: 100%;
 }
 .header li {
     display: inline-block;
-    padding: 0px 20px;
+    margin-right: 3%;
 }
 .header li a {
     transition: all 0.3s ease 0s;
@@ -150,7 +160,7 @@ section h4,
 .shop img {
     border-radius: 2%;
     transition: transform .2s;
-    width: 400px;
+    width: 100%;
     height: 400px;
     vertical-align: top;
 }
@@ -181,10 +191,6 @@ button p:hover {
     cursor:pointer;
 
 }
-
-/* .showSlide {
-    display: none
-} */
 .showSlide img {
     width: 100%;
     height: 400px;
@@ -229,4 +235,96 @@ button p:hover {
     } to {
         opacity: 1;
     }
+}
+.burger {
+    display: none;
+}
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+}
+@media screen and (max-width: 1170px) {
+
+    .logo {
+        width: 230px;
+        margin-top: 8%;
+    }
+    .header {
+        margin-left: 10%;
+    }
+    .link {
+        font-size: 30px;
+        
+    }
+
+}
+
+@media screen and (max-width: 1017px) {
+
+    .link {
+        font-size: 80%;
+    }
+    .header {
+        margin-right: 0%;
+    }
+}
+
+@media screen and (max-width: 946px) {
+    .link {
+        font-size: 70%;
+    }
+
+    .header li {
+    display: inline; 
+    } 
+
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .header {
+        position: absolute;
+        right: 0px;
+        height: 92vh; 
+        top: 8vh;
+        background-color: #24252A;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+    }
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+    .logo  {
+        top: 10px;
+    }
+
+    .header li {
+        opacity: 1;
+    
+    }
+
+}
+.nav-active {
+    transform: translateX(0%);
+
+}
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+     to {
+         opacity: 1;
+         transform: translateX(0px);
+     }
 }

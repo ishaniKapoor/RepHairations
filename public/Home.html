@@ -9,16 +9,25 @@
     <title>Home</title>
 </head>
 <body>
-    <div class=nav>
-        <li class='logo'><a href="./Home.html"> 
-        <img style="width: 300px; position: absolute;top: 32px;" src=" ./img/logo.svg" width="500" alt=""> </a></li>
+    <nav class=nav>
+        <li >
+            <!-- <a href="./Home.html">  -->
+        <img class='logo'  src=" ./img/logo.svg" width="500" alt="">
+    <!-- </a> -->
+    </li>
         <ul class="header">
         <li ><a class="link" href="./Home.html"> Home </a></li>
         <li><a class="link" href="./Comunity.html"> Community </a></li>
         <li><a class="link" href="./Shop.html"> Shop </a></li>
         <li><a class="link" href="./Mission.html"> About Us </a></li>
     </ul>
+    <div class='burger'>
+        <div class='line1'></div>
+        <div class='line2'></div>
+        <div class='line3'></div>
+           <!-- <div class='line1'></div> -->
     </div>
+</nav>
     
     <div class="image-container"> 
             <div class="showSlide fade">
@@ -132,6 +141,24 @@
         }
         slides[slide_index -1].style.display = "block";
     }
+
+
+    const navSlide = () => {
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.header');
+        const links = document.querySelectorAll('.header li');
+        // toggle now
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+    })
+
+        // anime link 
+        links.forEach((link, index) => {
+            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7}s$`;
+        })
+    }
+    navSlide();
+
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcQso_7TJcr7-ywUly0kVG6zA8QnY66ik&callback=myMap">
     </script>
