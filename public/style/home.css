@@ -231,8 +231,8 @@ button p:hover {
 	bottom: 9px;
 	height: 11px;
 	display: block;
-    position: absolute;
-    
+    position: relative;
+    text-align: center;
 }
 
 .nav-dots .nav-dot {
@@ -259,7 +259,42 @@ input#img-4:checked ~ .nav-dots label#img-dot-4
 	background: rgba(0, 0, 0, 0.8);
 }
 
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
 
+	  opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
 
 .fade {
     -webkit-animation-name: fade;
