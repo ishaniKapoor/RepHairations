@@ -71,8 +71,8 @@ app.get("/home", function (req, res) {
     });
 })
 
-app.get("/Mission", function (req, res) {
-    res.sendFile("/public/Mission.html", {
+app.get("/About Us", function (req, res) {
+    res.sendFile("/public/About Us.html", {
         root: __dirname
     });
 })
