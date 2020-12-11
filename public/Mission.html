@@ -1,32 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- <link rel="stylesheet" type="text/css" href="./style/contact.css">
+    <link rel="stylesheet" type="text/css" href="./style/mission.css">
+    <link rel="stylesheet" type="text/css" href="./style/home.css"> -->
+
+    <!-- <link rel="stylesheet" type="text/css" href="./style/home.css"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <link rel="stylesheet" type="text/css" href="./style/home.css">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./style/contact.css">
+    <link rel="stylesheet" type="text/css" href="./style/mission.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./style/home.css"> -->
+    <title>Mission</title>
 </head>
+
 <body>
-    <nav class=nav>
-        <li>
+     <nav class=nav>
+        <li >
             <!-- <a href="./Home.html">  -->
-            <img class='logo' src=" ./img/logo.svg" width="500" alt="">
-            <!-- </a> -->
-        </li>
+        <img class='logo'  src=" ./img/logo.svg" width="500" alt="">
+    <!-- </a> -->
+    </li>
         <ul class="header">
-            <li><a class="link" href="./Home.html"> Home </a></li>
-            <li><a class="link" href="./Comunity.html"> Community </a></li>
-            <li><a class="link" href="./Shop.html"> Shop </a></li>
-            <li><a class="link" href="./About Us.html"> About Us </a></li>
-        </ul>
-        <div class='burger'>
-            <div class='line1'></div>
-            <div class='line2'></div>
-            <div class='line3'></div>
-            <!-- <div class='line1'></div> -->
+        <li ><a class="link" href="./Home.html"> Home </a></li>
+        <li><a class="link" href="./Comunity.html"> Community </a></li>
+        <li><a class="link" href="./Shop.html"> Shop </a></li>
+        <li><a class="link" href="./Mission.html"> About Us </a></li>
+    </ul>
+    <div class='burger'>
+        <div class='line1'></div>
+        <div class='line2'></div>
+        <div class='line3'></div>
+           <!-- <div class='line1'></div> -->
+    </div>
+</nav>
+    <div class="container">
+        <div class="bgimage">
+            <img src="./img/imgbg3.jpg"  alt="">
+            <!-- <div style="background-image: url('.img/imgbg3.jpg');
+                background-size: cover; height:480px; padding-top:80px;"> -->
+            </div> 
+            
+            <div class="Missiontext">
+                <h3>Our Mission</h3>
+                <p>At RepHAIRations, it our mission to provide a
+                    welcoming environment in which anyone can shop,
+                    discuss question, advise, laugh, and appreciate
+                    textured hair and all the ways we choose to style
+                    it
+                </p>
+            </div>
         </div>
-    </nav>
+    </div>
+    <div class="ourStory">
+        <!-- <div style="background-image: url(z./img/image1.jpg);"> -->
+        <img src="./img/image1.jpg" width="500" alt="">
+        <div class="Storytext">
+            <h3>Our Story</h3>
+            <p>
+                We are friends. We are moms. We are different races. We want a better world for our kids.
+                We met in 2016, while volunteering for a fundraiser at our children's school. We talked about
+                the different paths that had led each of us to a mostly white school in a suburb of segregated
+                Boston. We discussed where to get our hair done and complained about the everyday inconveniences
+                of having no hair shops in our area. We fleshed out the endless ways that systemic racism and
+                oppression affects every bit of our daily lives. Then, we had honest conversations about the
+                roles we each play in upholding and dismantling that system - we covered it all! We debated
+                about the best ways to make change.
+                And, while it feels overwhelming to think about dismantling
+                systemic oppression, it felt exciting to dream about filling a need by opening a hair shop where
+                none exists. We talked and dreamed, and dreamed and talked… until a day in October 2019 when we
+                decided to actually do it! Never mind that we knew nothing about opening a retail business of any
+                kind. Never mind that we didn’t have a business plan or investors. We had a vision and a name and
+                the conviction to make it happen.
+            </p>
+            <p style="font-style: italic;"> Welcome to RepHAIRations!</p>
+        </div>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+                <h2>Contact Us</h2>
+                <form action="/signup " method="POST">
+
+                    <input class="field" type="text" name="firstName" id="first-name" class="form-control"
+                        placeholder="First Name" required />
+                    <input class="field" type="text" name="lastName" id="last-name" class="form-control"
+                        placeholder="Last Name" required />
+                    <input class="field" type="email" name="email" id="email" class="form-control" placeholder="Email"
+                        required />
+                    <textarea class="field" class="form-control" name="textarea" id="exampleTextarea"
+                        rows="3"></textarea>
+
+                    <button style="bottom:-60px;" type="submit" class="btn ">
+                        <p>Submit</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="location">
+        <h3>Location & hours</h3>
+        <div class="wrapper">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5890.369250243191!2d-71.18702794436545!3d42.42380489414744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3779b4298e159%3A0xd973671c57fa38fc!2sRepHAIRations!5e0!3m2!1sen!2sus!4v1606103076436!5m2!1sen!2sus"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0"></iframe>
+            <!-- <section id="googleMap" style="width:508px;height:355px;"> -->
+            </section>
+            <section>
+                <p style="font-style: italic;">RepHAIRations</p>
+                <p>1339 Mass ave, </p>
+                <p> Arlington, 02476</p>
+                <p>(781) 777- 1527</p>
+            </section>
+            <section>
+                <p> Wed 12 pm-4 pm</p>
+                <p>Thurs 4 pm - 9 pm</p>
+                <p>Fri 11 pm - 4 pm</p>
+                <p>Sat 11 pm -4 pm</p>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <p><a href="./About Us.html"> Contact us </a></p>
+        <section class="social">
+            <p><a href="#"> email </a></p>
+            <p><a href="#"> facebook </a></p>
+            <p><a href="#"> instagram </a></p>
+        </section>
+    </footer>
+    <script>
+        var slide_index = 1;
+        displaySlides(slide_index);
+
+        function nextSlide(n) {
+            displaySlides(slide_index += n);
+        }
+
+        function currentSlide(n) {
+            displaySlides(slide_index = n);
+        }
+
+        function displaySlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("showSlide");
+            if (n > slides.length) {
+                slide_index = 1;
+            }
+            if (n < 1) {
+                slide_index = slides.length;
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slide_index - 1].style.display = "block";
+        }
+
+
+        const navSlide = () => {
+            const burger = document.querySelector('.burger');
+            const nav = document.querySelector('.header');
+            const links = document.querySelectorAll('.header li');
+            // toggle now
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('nav-active');
+            })
+
+            // anime link 
+            links.forEach((link, index) => {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7}s$`;
+            })
+        }
+        navSlide();
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcQso_7TJcr7-ywUly0kVG6zA8QnY66ik&callback=myMap">
+    </script>
 </body>
+
 </html>

@@ -1,28 +1,28 @@
-* {
+/* * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 
-        /* background-color: #EAE7DC; */
+    background-color: #EAE7DC;
 
-}
+} */
 
-.Missiontext{
-position: absolute;
-width: 500px;
-height: 247.5px;
-margin-left: 10%;
-/* left: 120px; */
-top: 100px;
+.Missiontext {
+    position: absolute;
+    width: 500px;
+    height: 247.5px;
+    margin-left: 10%;
+    left: 1px;
+    top: 100px;
 
-font-family: 'Open Sans';
-font-style: normal;
-font-weight: 500;
-font-size: 70px;
-line-height: 60px;
-background-color: white;
-color: black;
-margin-top: 7%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 60px;
+    background-color: white;
+    color: black;
+    margin-top: 7%;
 
 }
 
@@ -78,31 +78,36 @@ margin-top: 7%;
 }
 
 #more {
-    display:none;
+    display: none;
 }
 
 
 
-.image-slider{
-    display:flex;
+.image-slider {
+    display: flex;
     width: 100%;
     height: 500px;
 
 }
+
 .header {
     padding: 0px;
     margin-left: 5%;
     /* background-color: #24252A; */
 
 }
+
 .bgimage img {
-    width: 100%;
+    width: 1280px;
+    height: 346px;
     background: black;
 
 }
+
 a img {
     width: 10px;
 }
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -110,20 +115,25 @@ a img {
     padding: 30px 10%;
     list-style: none;
 }
+
 .header li {
     display: inline-block;
     padding: 0px 20px;
 }
+
 .header li a {
     transition: all 0.3s ease 0s;
 }
 
 .header li a:hover {
-        color: #de9a52;
-    
+    color: #de9a52;
+
 }
 
-li, a, button,h3 {
+li,
+a,
+button,
+h3 {
     font-family: 'Open Sans';
     font-weight: 50px;
     font-size: 10px;
@@ -137,23 +147,27 @@ li, a, button,h3 {
     color: #000000;
 }
 
-.Missiontext h3, .Storytext h3{
+.Missiontext h3,
+.Storytext h3 {
     font-size: 30px;
     text-align: center;
     margin-bottom: 3%;
     margin-top: 3%;
 
 }
+
 .Missiontext p {
     text-align: center;
     font-weight: 90px;
     font-style: italic;
 }
+
 .location {
     margin-top: 2%;
     margin-left: 10%;
 }
-p { 
+
+p {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: normal;
@@ -167,6 +181,7 @@ p {
     display: flex;
     align-items: center;
 }
+
 .wrapper section {
     display: inline-block;
     padding: 0px 3px;
@@ -180,9 +195,11 @@ footer {
     padding: 5%;
     justify-content: space-between;
 }
-.social p  {
+
+.social p {
     display: inline-block;
 }
+
 footer a {
     font-size: 14px;
     color: white;
