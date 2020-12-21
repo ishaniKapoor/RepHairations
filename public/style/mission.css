@@ -1,11 +1,11 @@
-/* * {
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 
-    background-color: #EAE7DC;
+    /* background-color: #EAE7DC; */
 
-} */
+}
 
 .Missiontext {
     position: absolute;
@@ -116,7 +116,7 @@ a img {
     list-style: none;
 }
 
-.header li {
+/* .header li {
     display: inline-block;
     padding: 0px 20px;
 }
@@ -128,7 +128,7 @@ a img {
 .header li a:hover {
     color: #de9a52;
 
-}
+} */
 
 li,
 a,
@@ -208,3 +208,49 @@ footer a {
 .social p a:hover {
     color: gray;
 }
+
+/* HEADER  */
+/* .header {
+    padding: 0px;
+    width: 60%;
+
+    margin-left: 2%;
+
+} */
+/* .header li {
+    display: inline-block;
+    margin-right: 3%;
+}
+.header li a {
+    transition: all 0.3s ease 0s;
+}
+
+.link:hover {
+    color: #de9a52;
+}
+
+
+.logo {
+    width: 300px;
+    margin-top: 2.5%;
+}
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 10%;
+    list-style: none;
+    min-height: 8vh;
+    background-color: #24252A;
+    width: 100%;
+} */
