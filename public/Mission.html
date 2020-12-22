@@ -49,7 +49,7 @@
     </div>
     <div class="ourStory">
         <!-- <div style="background-image: url(z./img/image1.jpg);"> -->
-        <img src="./img/image1.jpg" width="500" alt="">
+        <img src="./img/image1.jpg" width="40%" alt="">
         <div class="Storytext">
             <h3>Our Story</h3>
             <p>
@@ -126,50 +126,23 @@
             <p><a href="#"> instagram </a></p>
         </section>
     </footer>
-    <!-- <script>
-        var slide_index = 1;
-        displaySlides(slide_index);
+    <script>
+            const navSlide = () => {
+                const burger = document.querySelector('.burger');
+                const nav = document.querySelector('.header');
+                const links = document.querySelectorAll('.header li');
+                // toggle now
+                burger.addEventListener('click', () => {
+                    nav.classList.toggle('nav-active');
+                })
 
-        function nextSlide(n) {
-            displaySlides(slide_index += n);
-        }
-
-        function currentSlide(n) {
-            displaySlides(slide_index = n);
-        }
-
-        function displaySlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("showSlide");
-            if (n > slides.length) {
-                slide_index = 1;
+                // anime link 
+                links.forEach((link, index) => {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7}s$`;
+                })
             }
-            if (n < 1) {
-                slide_index = slides.length;
-            }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[slide_index - 1].style.display = "block";
-        }
-
-
-        const navSlide = () => {
-            const burger = document.querySelector('.burger');
-            const nav = document.querySelector('.header');
-            const links = document.querySelectorAll('.header li');
-            // toggle now
-            burger.addEventListener('click', () => {
-                nav.classList.toggle('nav-active');
-            })
-
-            // anime link 
-            links.forEach((link, index) => {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7}s$`;
-            })
-        }
-        navSlide();
-    </script> -->
+            navSlide();
+        </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcQso_7TJcr7-ywUly0kVG6zA8QnY66ik&callback=myMap">
     </script>
 </body>

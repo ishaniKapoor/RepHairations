@@ -2,14 +2,13 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .logo {
     width: 300px;
     margin-top: 2.5%;
-    /* width: 50%; */
-    /* position: absolute; */
-    /* top: 32px; */
+  
 }
 
 
@@ -22,7 +21,7 @@
 
 }
 
-.nav {
+/* .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +30,7 @@
     min-height: 8vh;
     background-color: #24252A;
     width: 100%;
-}
+} */
 
 .header li {
     display: inline-block;
@@ -229,7 +228,7 @@ button p:hover {
     border-radius: 0 3px 3px 0;
 }
 
-.right {
+/* .right {
     right: 0;
     cursor: pointer;
     position: absolute;
@@ -251,9 +250,9 @@ button p:hover {
     display: block;
     position: relative;
     text-align: center;
-}
+} */
 
-.nav-dots .nav-dot {
+/* .nav-dots .nav-dot {
     top: -5px;
     width: 11px;
     height: 11px;
@@ -267,14 +266,14 @@ button p:hover {
 .nav-dots .nav-dot:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.8);
-}
+} */
 
-input#img-1:checked~.nav-dots label#img-dot-1,
+/* input#img-1:checked~.nav-dots label#img-dot-1,
 input#img-2:checked~.nav-dots label#img-dot-2,
 input#img-3:checked~.nav-dots label#img-dot-3,
 input#img-4:checked~.nav-dots label#img-dot-4 {
     background: rgba(0, 0, 0, 0.8);
-}
+} */
 
 .nav label {
     width: 200px;
