@@ -7,9 +7,20 @@
 
 .logo {
     width: 300px;
-    margin-top: 2.5%;
+    /* margin-left: 20%; */
+    /* margin-top: 2.5%; */
   
 }
+/* .navbar {
+    margin-left: 15%;
+} */
+/* .navbar-nav {
+    margin-left: 25%;
+}
+.navbar-brand{
+    width: 400px;
+    
+} */
 
 
 .header {
@@ -347,7 +358,7 @@ input:checked+.slide-container .nav label {
     }
 }
 
-.burger {
+/* .burger {
     display: none;
 }
 
@@ -356,9 +367,9 @@ input:checked+.slide-container .nav label {
     height: 3px;
     background-color: black;
     margin: 5px;
-}
+} */
 
-@media screen and (max-width: 1170px) {
+/* @media screen and (max-width: 1170px) {
 
     .logo {
         width: 230px;
@@ -374,9 +385,9 @@ input:checked+.slide-container .nav label {
 
     }
 
-}
+} */
 
-@media screen and (max-width: 1017px) {
+/* @media screen and (max-width: 1017px) {
 
     .link {
         font-size: 80%;
@@ -449,4 +460,4 @@ input:checked+.slide-container .nav label {
         opacity: 1;
         transform: translateX(0px);
     }
-}
+} */
