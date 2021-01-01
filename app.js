@@ -41,20 +41,31 @@ app.post('/signup', (req,res) => {
         },
         body: postData
     }
-    request(options, (err, response, body) => {
-        if(err) {
-            res.redirect('/fail.html');
-        } else {
-            if(response.statusCode === 200) {
-                res.redirect('/sucess.html');
-            } else {
+    sendMail(email, lastName, textarea, function(data) {
+        console.log("in app " + data)
+        request(options, (err, response, body) => {
+            console.log(response.statusCode)
+            if (err) {
                 res.redirect('/fail.html');
+            } else {
+                if (response.statusCode === 200 && typeof data !== "undefined") {
+                    console.log("data is not undefined")
+                    res.redirect('/sucess.html');
+                } else {
+                    console.log("data IS undefined")
+                    res.redirect('/fail.html');
+                }
             }
-        }
-    })
+        })
+
+    });
+    // console.log(" in app " + bool);
+    
     // // send email 
-    console.log("data: ", req.body);
-    sendMail(email, lastName, textarea);
+    // console.log("data: ", req.body);
+    // let err = sendMail(email, lastName, textarea);
+    // console.log(" in app " + err); 
+
 })
 
 

@@ -8,21 +8,23 @@ const auth = {
     }
 }
 const transporter = nodemailer.createTransport(mailGun(auth));
-
-const sendMail = (email, name, text) => {
+const sendMail = (email, name, text, cb) => {
     const mailOptions = {
         from: email,
         to: 'takougnadie@gmail.com',
         subject: name,
         text: text
     };
-    transporter.sendMail(mailOptions, function (err, data) {
+    transporter.sendMail(mailOptions, function(err, data) {
         if (err) {
-            console.log("error")
+            console.log(data);
         } else {
-           console.log(data)
+            console.log(data)
         }
-    })
+        return cb(data)
+    } 
+    
+    )
 }
 
 module.exports = sendMail; 

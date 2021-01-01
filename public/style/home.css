@@ -239,53 +239,9 @@ button p:hover {
     border-radius: 0 3px 3px 0;
 }
 
-/* .right {
-    right: 0;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: 1050px;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 3px 0 0 3px;
+.navbar-nav {
+    margin-left: 15%;
 }
-
-.nav-dots {
-    width: 100%;
-    bottom: 9px;
-    height: 11px;
-    display: block;
-    position: relative;
-    text-align: center;
-} */
-
-/* .nav-dots .nav-dot {
-    top: -5px;
-    width: 11px;
-    height: 11px;
-    margin: 0 4px;
-    position: relative;
-    border-radius: 100%;
-    display: inline-block;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-.nav-dots .nav-dot:hover {
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.8);
-} */
-
-/* input#img-1:checked~.nav-dots label#img-dot-1,
-input#img-2:checked~.nav-dots label#img-dot-2,
-input#img-3:checked~.nav-dots label#img-dot-3,
-input#img-4:checked~.nav-dots label#img-dot-4 {
-    background: rgba(0, 0, 0, 0.8);
-} */
-
 .nav label {
     width: 200px;
     height: 100%;
