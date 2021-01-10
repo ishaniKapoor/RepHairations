@@ -7,6 +7,10 @@
 
 }
 
+body {
+    background-color: rgb(230, 218, 201);
+}
+
 .Missiontext {
     position: absolute;
     width: 500px;

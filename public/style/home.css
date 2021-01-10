@@ -3,13 +3,17 @@
     margin: 0px;
     box-sizing: border-box;
     overflow-x: hidden;
+    
+}
+body {
+    /* background-color: #EAE7DC; */
+    background-color: rgb(230, 218, 201);
 }
 
 .logo {
     width: 300px;
     /* margin-left: 20%; */
     /* margin-top: 2.5%; */
-  
 }
 /* .navbar {
     margin-left: 15%;
