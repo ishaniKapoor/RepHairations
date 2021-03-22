@@ -10,7 +10,10 @@
 body {
     background-color: rgb(230, 218, 201);
 }
-
+.col-sm p {
+    font-family: 'Quicksand',
+        sans-serif;
+}
 .Missiontext {
     position: absolute;
     width: 500px;

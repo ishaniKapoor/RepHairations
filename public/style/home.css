@@ -10,7 +10,13 @@
 body {
     /* background-color: #EAE7DC; */
     background-color: rgb(230, 218, 201);
+    font-family: 'Quicksand',
+    sans-serif;
     
+}
+.col-sm p {
+     font-family: 'Quicksand',
+     sans-serif;
 }
 
 .logo {

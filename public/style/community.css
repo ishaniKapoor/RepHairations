@@ -8,6 +8,10 @@ iframe {
   margin-top: 3%;
   margin-left: 20%;
 }
+.col-sm p {
+  font-family: 'Quicksand',
+    sans-serif;
+}
 /* .logo {
     width: 300px;
     margin-top: 2.5%; */
