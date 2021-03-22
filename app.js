@@ -34,10 +34,10 @@ app.post('/signup', (req,res) => {
     }
     const postData = JSON.stringify(data); 
     const options = {
-        url: 'https://us2.api.mailchimp.com/3.0/lists/9249a45cbe',
+        url: process.env.URL,
         method: 'POST', 
         headers: {
-            Authorization: 'auth 4ee80616fd4d1e5dab66716eddeb2ae2-us2'
+            Authorization: 'auth ' + process.env.AUTH
         },
         body: postData
     }
@@ -96,5 +96,5 @@ app.get("/Shop", function (req, res) {
 
 
 app.listen(PORT, process.env.IP, function () {
-    console.log(`server is running on ${PORT}`);
+    console.log(`server is running on ${PORT} `);
 })
