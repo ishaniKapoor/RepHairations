@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: rgb(230, 218, 201);
+    background-color:#f1c9b991;
 }
 .col-sm p {
     font-family: 'Quicksand',
@@ -202,7 +202,7 @@ p {
 
 footer {
     display: flex;
-    background-color: black;
+    background-color: #e0957791;
     margin-top: 3%;
     padding: 5%;
     justify-content: space-between;
@@ -213,8 +213,9 @@ footer {
 }
 
 footer a {
+    font-family: 'Quicksand';
     font-size: 14px;
-    color: white;
+    color: black;
 }
 
 .social p a:hover {

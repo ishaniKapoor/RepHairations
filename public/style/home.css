@@ -8,8 +8,7 @@
     
 }
 body {
-    /* background-color: #EAE7DC; */
-    background-color: rgb(230, 218, 201);
+    background-color: #f1c9b991;
     font-family: 'Quicksand',
     sans-serif;
     
@@ -41,7 +40,7 @@ body {
 }
 
 .link:hover {
-    color: #de9a52;
+    color: #f3955e;
 }
 
 li,
@@ -102,7 +101,7 @@ p {
 
 footer {
     display: flex;
-    background-color: black;
+    background-color: #e0957791;
     margin-top: 3%;
     padding: 5%;
     justify-content: space-between;
@@ -114,8 +113,9 @@ footer {
 }
 
 footer a {
+    font-family: 'Quicksand';
     font-size: 14px;
-    color: white;
+    color: black;
 }
 
 .social p a:hover {
